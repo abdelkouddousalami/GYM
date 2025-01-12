@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Videos - GymBro</title>
+    <link rel="website icon" type="png" href="img/gym.png">
+    <link rel="stylesheet" href="workout.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo-removebg-preview.png" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workout.html">Workout Videos</a></li>
+                <li><a href="program.html">Fitness Programs</a></li>
+                <li><a href="calories.html">Calorie Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="login-btn">
+            <a href="#">View More</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+   
+    <main class="main">
+        <section class="intro">
+            <h2 class="title">Workout Videos</h2>
+            <p class="description">Browse our curated collection of workout videos, with filters for difficulty, muscle groups, and goals.</p>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="filters">
+            <h3 class="filter-title">Filter Your Search</h3>
+            <div class="filter-container">
+                <!-- Difficulty Filter -->
+                <div class="filter">
+                    <h4 class="filter-label">Difficulty</h4>
+                    <select class="filter-select">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <!-- Muscle Group Filter -->
+                <div class="filter">
+                    <h4 class="filter-label">Target Muscle Group</h4>
+                    <select class="filter-select">
+                        <option value="upper-body">Upper Body</option>
+                        <option value="lower-body">Lower Body</option>
+                        <option value="full-body">Full Body</option>
+                        <option value="core">Core</option>
+                    </select>
+                </div>
+
+                <!-- Goal Filter -->
+                <div class="filter">
+                    <h4 class="filter-label">Fitness Goal</h4>
+                    <select class="filter-select">
+                        <option value="weight-loss">Weight Loss</option>
+                        <option value="muscle-gain">Muscle Gain</option>
+                        <option value="maintain">Maintain</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workout Videos List -->
+        <section class="videos">
+            <!-- Video Item -->
+            <div class="video-item">
+                <h3 class="video-title">Full Body Workout</h3>
+                <p class="video-description">A great full-body workout for all levels. Perfect for building strength and endurance.</p>
+                <a href="workout-video-details.html" class="video-link">Watch Now</a>
+            </div>
+
+            <!-- Video Item -->
+            <div class="video-item">
+                <h3 class="video-title">Upper Body Strength</h3>
+                <p class="video-description">Focus on building upper body strength with this targeted workout routine.</p>
+                <a href="workout-video-details.html" class="video-link">Watch Now</a>
+            </div>
+
+            <!-- Video Item -->
+            <div class="video-item">
+                <h3 class="video-title">Core Training</h3>
+                <p class="video-description">Strengthen your core muscles with these effective exercises.</p>
+                <a href="workout-video-details.html" class="video-link">Watch Now</a>
+            </div>
+
+            <!-- Video Item -->
+            <div class="video-item">
+                <h3 class="video-title">Leg Day</h3>
+                <p class="video-description">Intense lower body workout to sculpt and strengthen your legs.</p>
+                <a href="workout-video-details.html" class="video-link">Watch Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GymBro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const darkIcon = document.getElementById('dark-icon');
+        const lightIcon = document.getElementById('light-icon');
+        const body = document.body;
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            darkIcon.classList.toggle('hidden');
+            lightIcon.classList.toggle('hidden');
+        });
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

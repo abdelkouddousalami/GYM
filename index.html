@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymBro - Your Digital Gym Partner</title>
+    <link rel="website icon" type="png" href="img/gym.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo-removebg-preview.png" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workout.html">Workout Videos</a></li>
+                <li><a href="program.html">Fitness Programs</a></li>
+                <li><a href="calories.html">Calorie Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="login-btn">
+            <a href="#">View More</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <video autoplay muted loop id="bg-video">
+                <source src="img/4761428-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1>Achieve Your Fitness Goals</h1>
+            <p>GymBro combines expert workout plans, personalized tools, and a sleek design to empower your fitness journey.</p>
+        </section>
+
+        <section class="games">
+            <div class="game-card">
+                <img src="img/videophoto.avif" alt="Workout Videos" class="game-photo">
+                <div class="game-info">
+                    <h2 class="game-title">Workout Videos</h2>
+                    <p class="game-description">Curated library with filters for difficulty, target muscle groups, and goals.</p>
+                    <div class="game-actions">
+                        <a class="btn-primary" href="workout.html">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="game-card">
+                <img src="img/fitness.webp" alt="Customized Fitness Programs" class="game-photo">
+                <div class="game-info">
+                    <h2 class="game-title">Customized Fitness Programs</h2>
+                    <p class="game-description">Structured plans with weekly schedules and workout descriptions.</p>
+                    <div class="game-actions">
+                        <a class="btn-primary" href="fitness-programs.html">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="game-card">
+                <img src="img/calories.jpg" alt="Calorie Calculator" class="game-photo">
+                <div class="game-info">
+                    <h2 class="game-title">Calorie Calculator</h2>
+                    <p class="game-description">Estimate your daily caloric needs for weight loss or muscle gain.</p>
+                    <div class="game-actions">
+                        <a class="btn-primary" href="calories.html">Calculate it!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 GymBro. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

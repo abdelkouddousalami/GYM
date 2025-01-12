@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Programs - GymBro</title>
+    <link rel="website icon" type="png" href="img/gym.png">
+    <link rel="stylesheet" href="programme.css">
+</head>
+<body id="body">
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo-removebg-preview.png" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workout.html">Workout Videos</a></li>
+                <li><a href="program.html">Fitness Programs</a></li>
+                <li><a href="calories.html">Calorie Calculator</a></li>
+            </ul>
+        </nav>
+        <div class="login-btn">
+            <a href="#">View More</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container">
+        <section class="text-center mb-12">
+            <h2>Fitness Programs</h2>
+            <p class="mt-4">Explore our fitness programs designed for every goal, from weight loss to muscle building.</p>
+        </section>
+
+        <!-- Fitness Programs List -->
+        <section class="grid">
+            <!-- Program Item -->
+            <div class="program-item">
+                <h3>Beginner Weight Loss Program</h3>
+                <p>A 4-week program designed to help beginners shed weight and build healthy habits.</p>
+                <a href="program-details.html">Learn More</a>
+            </div>
+
+            <!-- Program Item -->
+            <div class="program-item">
+                <h3>Muscle Building Program</h3>
+                <p>Targeted strength training routines to help you gain muscle effectively.</p>
+                <a href="program-details.html">Learn More</a>
+            </div>
+
+            <!-- Program Item -->
+            <div class="program-item">
+                <h3>Advanced HIIT Program</h3>
+                <p>High-intensity interval training for advanced fitness enthusiasts.</p>
+                <a href="program-details.html">Learn More</a>
+            </div>
+
+            <!-- Program Item -->
+            <div class="program-item">
+                <h3>Core Strength Program</h3>
+                <p>Focused on building a strong core and improving posture.</p>
+                <a href="program-details.html">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 GymBro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const darkIcon = document.getElementById('dark-icon');
+        const lightIcon = document.getElementById('light-icon');
+        const body = document.getElementById('body');
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            darkIcon.classList.toggle('hidden');
+            lightIcon.classList.toggle('hidden');
+        });
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
