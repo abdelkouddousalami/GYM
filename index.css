@@ -225,6 +225,10 @@ body {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     background-color: #011021;
     color: #e6f3fe;
     padding: 2rem 1rem;
